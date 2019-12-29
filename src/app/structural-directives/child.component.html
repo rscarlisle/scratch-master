@@ -1,0 +1,43 @@
+<p>child works!</p>
+
+<mat-card style="width:200px; text-align: center;">
+    <div>
+        <button 
+            (click)="loggedIn=true"
+            style="margin-right:20px"
+            mat-raised-button color="primary">
+            Login
+        </button>
+        <button 
+            (click)="loggedIn=false"
+            mat-raised-button color="primary">
+            Loout
+        </button>
+    </div>
+</mat-card>
+{{ message }}
+<br>
+<br>
+
+<div>
+    <div class="ng-scope layout-row">
+      <div class="flex">First item in row</div>
+      <div class="flex-20">Second item in row</div>
+    </div>
+    <div class="ng-scope layout-column">
+      <div class="flex-33">First item in column</div>
+      <div class="flex-66">Second item in column</div>
+    </div>
+  </div>
+  <br>
+  <br>
+<div>
+    <div layout="row">
+      <div flex>First item in row</div>
+      <div flex="20">Second item in row</div>
+    </div>
+    <div layout="column">
+      <div flex="66">First item in column</div>
+      <div flex="33">Second item in column</div>
+    </div>
+  </div>
