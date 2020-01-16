@@ -8,7 +8,31 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'project-master';
+  title = 'scratch-master';
+  // pageHeader: string = "Employee Details!";
+
+  // books = [
+  //   {
+  //     title: 'Awesome Novel 1',
+  //     description: 'Short description of awesome novel'
+  //   },
+  //   {
+  //     title: 'Awesome Novel 2',
+  //     description: 'Short description of awesome novel'
+  //   },
+  //   {
+  //     title: 'Awesome Novel 3',
+  //     description: 'Short description of awesome novel'
+  //   },
+  //   {
+  //     title: 'Awesome Novel 4',
+  //     description: 'Short description of awesome novel'
+  //   },
+  //   {
+  //     title: 'Awesome Novel 5',
+  //     description: 'Short description of awesome novel'
+  //   }
+  // ]
 
   autoTicks = false;
   disabled = false;

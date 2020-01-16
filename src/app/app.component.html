@@ -1,6 +1,10 @@
 <!-- <app-slider-formatting-example></app-slider-formatting-example> -->
 <!-- <app-test></app-test> -->
 <!-- <app-child></app-child> -->
+<!-- <app-employee></app-employee> -->
+
+<app-navbar></app-navbar>
+<!-- <app-customer></app-customer> -->
 
 <div style="padding:15px">
   <ul class="nav nav-pills">
@@ -8,13 +12,43 @@
       <a class="nav-link" routerLink="home">Home</a>
     </li>
     <li class="nav-item" routerLinkActive="active">
+      <a class="nav-link" [routerLink]="['/customers']">Customer-NgRx</a>
+    </li>
+    <li class="nav-item" routerLinkActive="active">
+      <a class="nav-link" routerLink="dashboard">Dashboard</a>
+    </li>
+    <li class="nav-item" routerLinkActive='active'>
+      <a class="nav-link" routerLink="flex">Flex-layout</a>
+    </li>
+    <li class="nav-item" routerLinkActive="active">
+      <a class="nav-link" routerLink="books">Books</a>
+    </li>
+    <li class="nav-item" routerLinkActive="active">
+      <a class="nav-link" routerLink="nav">Main Navigation</a>
+    </li>
+    <li class="nav-item" routerLinkActive="active">
       <a class="nav-link active" routerLink="test">Directives</a>
     </li>
     <li class="nav-item" routerLinkActive="active">
       <a class="nav-link" routerLink="slider">Slider-Tab</a>
     </li>
+    <li class="nav-item" routerLinkActive="active">
+      <a class="nav-link" routerLink="responsive">Responsive-Design</a>
+    </li>
+    <li class="nav-item" routerLinkActive="active">
+      <a class="nav-link" routerLink="employee">Employee</a>
+    </li>
+    <li class="nav-item" routerLinkActive='active'>
+      <a class="nav-link" routerLink="employee-list">Employee List</a>
+    </li>
   </ul>
 </div>
+
+<router-outlet></router-outlet>
+
+<!-- <img src="imagePath"> -->
+
+<!-- <h1>{{ pageHeader ? pageHeader : 'No Header' }}</h1> -->
 
 <!-- <div layout="row" layout-sm="column">
   <div flex>
@@ -83,4 +117,4 @@
   </li>
 </ul> -->
 
-<router-outlet></router-outlet>
+<!-- <router-outlet></router-outlet> -->

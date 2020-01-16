@@ -1,0 +1,80 @@
+<img src='https://www.pragimtech.com/{{imagePath}}'>
+
+<br><br>
+<h1>{{ pageHeader ? pageHeader : 'No Header' }}</h1>
+
+<h3>{{ getFullName() }}</h3>
+
+<table>
+    <th>
+        <tr>
+            <th colspan='2'>
+                Employee Details
+            </th>
+        </tr>
+        <tr *ngIf='showDetails'>
+            <td>First Name:</td>
+            <td>{{ firstName }}</td>
+        </tr>
+        <tr *ngIf='showDetails'>
+        <td>Last Name:</td>  
+        <td>{{ lastName }}</td>
+        </tr>
+        <tr *ngIf='showDetails'>
+            <td>Gender:</td>
+            <td>{{ gender }}</td>
+        </tr>
+        <tr *ngIf='showDetails'>
+            <td>Age:</td>
+            <td>{{ age }}</td>
+        </tr>
+    </th>
+</table>
+<br>
+
+<button id=buttonId
+    mat-button
+    mat-raised-button color="primary"
+    [disabled]=isDisabled 
+    (click)='toggleDetails()'>
+    {{ showDetails ? 'Hide' : 'Show'}} Details
+</button>
+<br><br>
+
+<mat-form-field>
+    <input matInput 
+        id=inputId 
+        type="text" 
+        value='Fish Sticks'
+        [(ngModel)]='name'>
+</mat-form-field>
+<br>
+<span
+    style='text-decoration:underline;
+        font-weight:bold'
+    >You entered:</span
+    > {{name}}
+<br><br>
+
+
+<table>
+    <th>
+    <tr>
+        <th [attr.colspan]="columnSpan">
+            Some Details
+        </th>
+    </tr>
+    <tr>
+        <td>Row One</td>
+        <td>Column Two</td>
+        <td>Column Three</td>
+        <td>{{ age }}</td>
+    </tr> 
+    <tr>
+        <td>Row Two</td>
+        <td>Column Two</td>
+        <td>Column Three</td>
+        <td>{{ age }}</td>
+    </tr>
+</th>
+</table>

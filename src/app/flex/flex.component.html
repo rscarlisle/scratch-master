@@ -1,0 +1,74 @@
+<p>flex works!</p>
+<!-- stackblitz for flex-layout -->
+
+
+<h1>Angular Toggle Button</h1>
+    <button (changed)="checked=$event">
+    </button>
+    <p>The state is {{checked ? 'ON' : 'OFF'}}.</p>
+
+
+    <input type="checkbox" id="toggle-button-checkbox"
+    (change)="changed.emit($event.target.checked)">
+  <label class="toggle-button-switch"  
+    for="toggle-button-checkbox"></label>
+  <div class="toggle-button-text">
+    <div class="toggle-button-text-on">ON</div>
+    <div class="toggle-button-text-off">OFF</div>
+  </div>
+
+
+
+<br><br>
+{{ myToggle }}
+<br><br>
+<!-- <input *ngIf="myToggle ? true : false">
+<input type="text"  *ngIf="myToggle ? true : false"> -->
+<br><br>
+<button 
+    mat-raised-button color="primary"
+    (click)="doToggle()">
+    Button Toggle
+</button>
+<br><br>
+
+<div class="bounds">
+    Toggle Boolean Variable 
+    <input type="checkbox" 
+           [(ngModel)]="booleanVariable"/>
+
+    <div class="content" 
+         fxLayout="row"
+         fxFlexFill>
+
+        <!-- Doesn't work with fxLayout-->
+        <div fxFlex 
+             fxLayout
+             [fxHide.xs]="booleanVariable"
+             class="sec1">
+            first-section
+        </div>
+
+        <div fxFlex 
+             class="sec2">
+            second-section
+        </div>
+    </div>
+
+    <div class="content-2" 
+         fxLayout="row"
+         fxFlexFill>
+        
+        <!-- Works when there is no fxLayout -->
+        <div fxFlex 
+             [fxHide.xs]="booleanVariable"
+             class="sec3">
+            first-section-2
+        </div>
+
+        <div fxFlex 
+             class="sec4">
+            second-section-2
+        </div>
+    </div>
+  </div>

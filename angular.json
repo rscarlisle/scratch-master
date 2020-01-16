@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "project-master": {
+    "scratch-master": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/project-master",
+            "outputPath": "dist/scratch-master",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "project-master:build"
+            "browserTarget": "scratch-master:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "project-master:build:production"
+              "browserTarget": "scratch-master:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "project-master:build"
+            "browserTarget": "scratch-master:build"
           }
         },
         "test": {
@@ -116,18 +116,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "project-master:serve"
+            "devServerTarget": "scratch-master:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "project-master:serve:production"
+              "devServerTarget": "scratch-master:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "project-master",
+  "defaultProject": "scratch-master",
   "cli": {
     "defaultCollection": "@nativescript/schematics",
     "analytics": "869913d8-4450-4c68-aa11-0675154b6c08"

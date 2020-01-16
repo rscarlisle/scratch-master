@@ -1,0 +1,61 @@
+<!-- todo: demo ngSwitchCase -->
+
+<!-- todo: emmet syntax => ["ul>li{List of Books}*2>a:link{here}"] <= -->
+
+<ul>
+    <li><a href="http://">List of Books</a></li>
+    <li><a href="http://">My Favorites</a></li>
+</ul>
+
+<div style="width: 500px; border: solid black; padding: 10px">
+ Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis earum facere sit dicta neque saepe minima sunt eos illo aut! Ducimus accusantium magnam totam aperiam odit dignissimos fugiat, beatae est.
+</div><br>
+
+<!-- todo: demo ngIf / ngFor / else / ng-template -->
+<!-- <div *ngIf="books.length > 0; then booksList;
+    else noBooks">
+</div>
+
+<ng-template #booksList>
+
+</ng-template>
+    <div *ngIf="books.length > 0">
+        <span 
+            style="margin-left: 20px;
+            font-weight: bold;
+            text-decoration: underline">
+            List of Books: 
+        </span> {{ books.length }}
+        <ul *ngFor='let book of books; 
+            index as i; 
+            even as isEven'>
+            <li>
+                {{i}} - {{ book.title}}
+                <span *ngIf="isEven">(Even Row)</span>
+            </li>
+        </ul>
+    </div>
+<ng-template #noBooks>
+    There are no books to list!
+</ng-template> -->
+
+<!-- <div *ngIf="books.length == 0">
+    There are no books to list!
+</div> -->
+
+<table style="border-collapse: separate;">
+    <tr *ngFor='let book of books; 
+        index as i;
+        even as isEven;'
+        [class.even]='isEven'>
+        <td>
+            {{ i }}
+        </td>
+        <td>
+            {{ book.title }}
+        </td>
+        <td>
+            {{ book.description }}
+        </td>
+    </tr>
+</table>
