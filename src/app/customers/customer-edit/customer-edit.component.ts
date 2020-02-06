@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./customer-edit.component.css']
 })
 export class CustomerEditComponent implements OnInit {
-
+  customerForm;
+  updateCustomer;
   constructor() { }
 
   ngOnInit() {

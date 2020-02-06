@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./customer-list.component.css']
 })
 export class CustomerListComponent implements OnInit {
+  error$;
+  customers$;
+  customer;
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  editCustomer(customer: any) {}
+  
+  deleteCustomer(customer: any) {}
 }

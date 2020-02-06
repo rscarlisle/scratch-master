@@ -1,6 +1,9 @@
 import {coerceNumberProperty} from '@angular/cdk/coercion';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { AngularFirestore } from "@angular/fire/firestore";
+import { Observable } from "rxjs";
+// import { AngularFireDatabase } from "@angular/fire/database";
 
 @Component({
   selector: 'app-root',
@@ -9,6 +12,18 @@ import { FormsModule } from '@angular/forms';
 })
 export class AppComponent {
   title = 'scratch-master';
+
+  // description = "Angular-Fire-Demo";
+  
+  // itemValue = '';
+  items: Observable<any[]>;
+
+
+  // constructor(public db: AngularFireDatabase) {
+  //   this.items = db.list('items').valueChanges();
+  //   // console.log('customers: ', this.customers)
+  // }
+
   // pageHeader: string = "Employee Details!";
 
   // books = [
