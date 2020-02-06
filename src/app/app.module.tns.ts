@@ -12,6 +12,19 @@ import { DashboardComponent } from '@src/app/dashboard/dashboard.component';
 import { FlexComponent } from '@src/app/flex/flex.component';
 import { TodoComponent } from '@src/app/todo/todo.component';
 import { NavbarComponent } from '@src/app/navbar/navbar.component';
+import { CalculatorComponent } from '@src/app/calculator/calculator.component';
+import { CoursesComponent } from '@src/app/courses/courses.component';
+import { CourseDetailComponent } from '@src/app/course-detail/course-detail.component';
+import { RxjsComponent } from '@src/app/rxjs/rxjs.component';
+import { ReactiveformComponent } from '@src/app/forms/reactiveform/reactiveform.component';
+import { ReactiveFormComponent } from '@src/app/forms/reactive-form/reactive-form.component';
+import { TemplateFormComponent } from '@src/app/forms/template-form/template-form.component';
+import { BasicFormComponent } from '@src/app/forms/reactive-form/basic-form/basic-form.component';
+import { SubmitFormComponent } from '@src/app/forms/reactive-form/submit-form/submit-form.component';
+import { ValidFormComponent } from '@src/app/forms/reactive-form/valid-form/valid-form.component';
+import { ArrayFormComponent } from '@src/app/forms/reactive-form/array-form/array-form.component';
+import { NestedFormComponent } from '@src/app/forms/reactive-form/nested-form/nested-form.component';
+import { AsyncOperationsComponent } from '@src/app/async-operations/async-operations.component';
 
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
@@ -32,6 +45,19 @@ import { NavbarComponent } from '@src/app/navbar/navbar.component';
     FlexComponent,
     TodoComponent,
     NavbarComponent,
+    CalculatorComponent,
+    CoursesComponent,
+    CourseDetailComponent,
+    RxjsComponent,
+    ReactiveformComponent,
+    ReactiveFormComponent,
+    TemplateFormComponent,
+    BasicFormComponent,
+    SubmitFormComponent,
+    ValidFormComponent,
+    ArrayFormComponent,
+    NestedFormComponent,
+    AsyncOperationsComponent,
   ],
   imports: [
     NativeScriptModule,

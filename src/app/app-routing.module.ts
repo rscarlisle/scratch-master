@@ -11,9 +11,17 @@ import { MainNavComponent } from './main-nav/main-nav.component';
 import { BooksComponent } from './books/books.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FlexComponent } from './flex/flex.component';
+import { CalculatorComponent } from "./calculator/calculator.component";
+import { coursesRouterConfig } from './courses-router-config';
+import { RxjsComponent } from './rxjs/rxjs.component';
+import { BasicFormComponent } from './forms/reactive-form/basic-form/basic-form.component';
+import { AsyncOperationsComponent } from './async-operations/async-operations.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
+  { path: 'async', component: AsyncOperationsComponent},
+  { path: 'calculator', component: CalculatorComponent },
+  { path: 'basic-form', component: BasicFormComponent},
   { path: 'books', component: BooksComponent },
   { path: 'customers', 
     loadChildren: "../app/customers/customers.module#CustomersModule" 
@@ -23,9 +31,10 @@ const routes: Routes = [
   { path: 'flex', component: FlexComponent },
   { path: 'nav', component: MainNavComponent },
   { path: 'responsive', component: TemplateComponent },
+  { path: 'rxjs', component: RxjsComponent },
   { path: 'slider', component: SliderFormattingExampleComponent },
   { path: 'test', component: TestComponent },
-
+  ...coursesRouterConfig,
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }
 ];

@@ -2,10 +2,22 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+// import { AngularFireModule } from "@angular/fire";
+// import { environment } from '@src/environments/environment';
+
+// import { AngularFireAnalyticsModule } from "@angular/fire/analytics";
+// import { AngularFireAuthModule } from "@angular/fire/auth";
+// import { AngularFireDatabaseModule } from "@angular/fire/database";
+// import { AngularFireFunctionsModule } from "@angular/fire/functions";
+// import { AngularFirestoreModule } from "@angular/fire/firestore";
+// import { AngularFireRemoteConfigModule } from "@angular/fire/remote-config";
+// import { AngularFireStorageModule } from "@angular/fire/storage";
+// import { AngularFireMessagingModule } from "@angular/fire/messaging";
+// import { AngularFirePerformanceModule } from "@angular/fire/performance";
 
 import { StoreModule } from "@ngrx/store";
 
-import { AppRoutingModule } from '../app/app-routing.module';
+import { AppRoutingModule } from '@src/app/app-routing.module';
 // import { AppRoutingModule } from './app-routing.module.tns';
 // import { BarcelonaModule } from './barcelona/barcelona.module';
 
@@ -70,7 +82,21 @@ import { DashboardComponent } from '@src/app/dashboard/dashboard.component';
 import { FlexComponent } from '@src/app/flex/flex.component';
 import { TodoComponent } from '@src/app/todo/todo.component';
 import { NavbarComponent } from '@src/app/navbar/navbar.component';
+import { CalculatorComponent } from '@src/app/calculator/calculator.component';
+import { CoursesComponent } from '@src/app/courses/courses.component';
+import { CourseDetailComponent } from '@src/app/course-detail/course-detail.component';
+import { CustomersModule } from "@src/app/customers/customers.module";
+import { RxjsComponent } from '@src/app/rxjs/rxjs.component';
+import { ReactiveFormComponent } from '@src/app/forms/reactive-form/reactive-form.component';
+import { TemplateFormComponent } from '@src/app/forms/template-form/template-form.component';
+import { BasicFormComponent } from '@src/app/forms/reactive-form/basic-form/basic-form.component';
+import { SubmitFormComponent } from '@src/app/forms/reactive-form/submit-form/submit-form.component';
+import { ValidFormComponent } from '@src/app/forms/reactive-form/valid-form/valid-form.component';
+import { ArrayFormComponent } from '@src/app/forms/reactive-form/array-form/array-form.component';
+import { NestedFormComponent } from '@src/app/forms/reactive-form/nested-form/nested-form.component';
+import { AsyncOperationsComponent } from '@src/app/async-operations/async-operations.component';
 // import { ToggleButtonComponent } from './toggle-button.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -87,7 +113,19 @@ import { NavbarComponent } from '@src/app/navbar/navbar.component';
     DashboardComponent,
     FlexComponent,
     TodoComponent,
-    NavbarComponent
+    NavbarComponent,
+    CalculatorComponent,
+    CoursesComponent,
+    CourseDetailComponent,
+    RxjsComponent,
+    ReactiveFormComponent,
+    TemplateFormComponent,
+    BasicFormComponent,
+    SubmitFormComponent,
+    ValidFormComponent,
+    ArrayFormComponent,
+    NestedFormComponent,
+    AsyncOperationsComponent
   ],
   imports: [
     // BarcelonaModule,
@@ -142,6 +180,18 @@ import { NavbarComponent } from '@src/app/navbar/navbar.component';
     PortalModule,
     ScrollingModule,
     StoreModule.forRoot({}),
+    CustomersModule,
+    ReactiveFormsModule,
+    // AngularFireModule.initializeApp(environment.firebase, "scratch-master"),
+    // AngularFireAnalyticsModule,
+    // AngularFireAuthModule,
+    // AngularFireDatabaseModule,
+    // AngularFireFunctionsModule,
+    // AngularFirestoreModule,
+    // AngularFireRemoteConfigModule,
+    // AngularFireStorageModule,
+    // AngularFireMessagingModule,
+    // AngularFirePerformanceModule
   ],
   providers: [],
   bootstrap: [AppComponent]
