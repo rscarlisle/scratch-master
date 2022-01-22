@@ -51,7 +51,7 @@
     "json-server": "^0.15.1",
     "mongodb": "^3.4.1",
     "nativescript-angular": "~8.20.0",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^3.1.1",
     "redis": "^2.8.0",
     "reflect-metadata": "~0.1.12",
     "rxjs": "~6.5.3",
